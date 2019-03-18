@@ -6,14 +6,14 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 
 class Leads extends Component{
-    /*static propTypes = {
+    static propTypes = {
         leads: PropTypes.array.isRequired
     };
 
 
     componentDidMount(){
         this.props.getLeads();
-    }*/
+    }
     render(){
         return (
                     <div>
@@ -25,6 +25,7 @@ class Leads extends Component{
 
 const mapStateToProps = state => ({
     leads: state.leads.leads
-});/*
-export default connect(mapStateToProps, { getLeads })(Leads);*/
-export default Leads;
+});
+export default connect(mapStateToProps, { getLeads })(Leads);
+
+

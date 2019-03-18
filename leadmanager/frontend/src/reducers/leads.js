@@ -1,7 +1,7 @@
 import { GET_LEADS } from '../actions/types';
 
 
-initialState = {
+const initialState = {
     leads: []
 };
 

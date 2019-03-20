@@ -7,7 +7,10 @@ import {connect} from 'react-redux';
 
 class Leads extends Component{
     static propTypes = {
-        leads: PropTypes.array.isRequired
+        leads: PropTypes.array.isRequired,
+        getLeads: PropTypes.func.isRequired,
+        deleteLead: PropTypes.func.isRequired
+
     };
 
 

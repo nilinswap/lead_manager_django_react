@@ -21,12 +21,6 @@ class Form extends Component{
     onSubmit = e =>{
         e.preventDefault();
        this.props.addLead(this.state);
-       this.setState({
-       name: '',
-       email: '',
-       message: '',
-    });
-
     }
 
     render(){
